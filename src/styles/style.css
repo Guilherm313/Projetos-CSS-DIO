@@ -1,0 +1,178 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+figure {
+    margin: 0px;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #F8F8F8;
+}
+span {
+    display: flex;
+    align-items: flex-end;
+    margin: 5px 0px;
+}
+    
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 16px 0px;
+    
+}
+
+.menu-features img, #search-button  {
+    padding:  0px 16px 0px;
+    cursor: pointer;
+}
+
+#search-button {
+    background-color: #F8F8F8;
+    width: 57px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    align-self: flex-end;
+    border-radius: 0px 25px 25px 0px;
+}
+#search-button:hover {
+    background: #eaeaea;
+}
+#search-feature {
+    display: flex;
+    height: 40px;
+}
+#search-bar {
+    display: flex;
+    width: 404px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    justify-content: flex-end;
+    border-radius: 25px 0px 0px 25px;
+}
+[placeholder="pesquisar..."] {
+    padding-left: 20px;
+}
+.videos-nav {
+    display: flex;
+    align-items: flex-start;
+}
+#nav-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px 0px;
+}
+#nav-main-container img {
+    border-radius: 10px;
+}
+#nav-main-container h2 {
+    margin: 0;
+}
+.video-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 356px;
+    height: 90px;
+    cursor: pointer;
+}
+.figc-container {
+    height: 90px;
+}
+.video-title {
+    align-self: flex-end;
+    font-size: small;
+    padding: 0px 0px 5px 15px;
+}
+.video-info {
+    align-self: flex-end;
+    font-size: smaller;
+    color: #515151;
+}
+.description {
+    border-radius: 25px;
+    background: rgb(229, 229, 229);
+    padding: 10px;
+}
+.description summary {
+    cursor: pointer;
+}
+.description p, a {
+    text-decoration-line: none;
+    margin: 0;
+}
+.description a {
+    color: rgb(6, 95, 212);
+}
+#video-main-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0px 20px 10px;
+}
+#video {
+    width: 952px;
+    height: 537px;
+    border-radius: 25px;
+}
+#main-video-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 15px 0px;
+}
+#video-description {
+    width: 902px;
+    height: 40px;
+}
+#video-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#subscribe-button {
+    background: #CC0000;
+    border: none;
+    color: white;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 600;
+    width: 159px;
+    height: 40px;
+    cursor: pointer;
+}
+#subscribe-button:hover {
+    background-color: #dc3d3d;
+}
+.features-description {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+}
+.features-description:hover {
+    background: #ececec;
+    border-radius: 25px;
+}
+.features-description p {
+    margin: 0;
+}
+.features-description img {
+    margin: 0px 10px 0px 0px;
+}
