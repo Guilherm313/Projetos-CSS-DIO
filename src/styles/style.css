@@ -6,9 +6,6 @@
     box-sizing: border-box;
     font-family: Roboto;
 }
-figure {
-    margin: 0px;
-}
 main {
     display: flex;
     align-items: center;
