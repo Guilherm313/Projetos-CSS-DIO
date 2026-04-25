@@ -7,7 +7,7 @@
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 #menu-container {
     display: flex;
@@ -16,6 +16,7 @@ main {
 }
 #menu-container img {
     padding: 10px;
+    cursor: pointer;
 }
 #search-feature{
     display: flex;
@@ -31,19 +32,19 @@ main {
     border: 1px solid #CCCCCC;
     border-radius: 0px 25px 25px 0px;
     background: #F8F8F8;
-    cursor: pointer;
 }
 #sidebar-container {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    align-self: flex-start;
-    width: 30vh;
+    width: 100vw;
+    min-width: 218px;
+    padding: 15px 0px;
     
 }
 #sidebar-container figure div {
-    padding: 5px 10px 5px 10px;
+    padding: 10px 10px 10px 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -51,19 +52,49 @@ main {
     border-radius: 0px 25px 25px 0px;
     font-size: 14px;
     font-weight: 400;
+    min-width: 180px;
+    cursor: pointer;
 }
 #sidebar-container figure div:hover {
     background-color: #f3f3f3;
+
 }
 #sidebar-container figure img {
     padding-right: 20px;
 }
-#videos-container {
+.video-div:hover {
+    background-color: #ededed;
+    border-radius: 10px;
+}
+#videos-container article {
     display: grid;
     grid-template: repeat(3, auto) / repeat(4, 1fr);
-    gap: 40px;
-    align-content: center;
-    justify-content: center;
-    
+    gap: 30px 20px;
+    padding: 20px 30px 0px;
+    place-content: flex-start center;
+    background: #F8F8F8;
+    height: 100vh;
 }
-
+.video-div figcaption {
+    font-size: 14px;
+    font-weight: 600;
+}
+.channel-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 0px 0px;
+}
+.channel-title img {
+    padding-right: 10px;
+}
+.channel-title div p {
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #515151;
+}
+.video-div {
+    padding: 10px 10px;
+    cursor: pointer;
+}
