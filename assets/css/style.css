@@ -1,0 +1,179 @@
+@import url(fonts.css);
+@import url(brekpoint-428px.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: opensans;
+}
+header {
+    background: 
+    url(../images/Header\ Background.png) center;
+    background-size: cover;
+    max-width: 100%;
+    color: white;
+}
+:root {
+    font-size: 100%;
+}
+p {
+    font-size: 1rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 94px 0px 60px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+header h1 {
+    font-family: luckiest guy;
+    text-transform: uppercase;
+    width: 30vw;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+#header-buttons-container {
+    width: 100%;
+    max-width: 502px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#header-buttons-container button {
+    margin-top: 30px;
+    height: 44px;
+    border-radius: 25px;
+    padding: 0px 30px;
+    border: none;
+}
+#browser-button {
+    background: #23272A;
+    color: white;
+}
+#browser-button:hover {
+    background: #2b3034;
+}
+#download-button:hover {
+    background: #e3e3e3;
+}
+
+section {
+    margin: auto;
+}
+.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 348px;
+}
+.section-text h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    width: 90%;
+    color: #23272A;
+    margin-bottom: 15px;
+}
+.section-content:nth-of-type(even) {
+    background: #F6F6F6;
+}
+#section-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#section-vertical .section-text{
+    margin-top: 40px;
+    flex-basis: 100px;
+}
+#section-vertical .section-text, #inverted-section {
+    order: -1;
+}
+#section-vertical .section-text p {
+    width: 100%;
+    max-width: 50rem;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23272A;
+    height: 134px;
+}
+
+@media screen and (max-width:428px) {
+    header {
+        background: url(../images/Header\ Background-428.png);
+        height: auto;
+        min-height: 504px;
+        
+    }
+    div#header-content {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding:60px 15px;
+        margin: 0;
+        width: 100%;
+        text-align: start;
+    }
+    header h1 {
+        font-size: 2rem;
+        width: 50%;
+    }
+
+    #header-buttons-container {
+        margin: 20px auto;
+        flex-direction: column;
+        height: auto;
+        max-height: 54px;
+    }
+    #header-buttons-container button {
+        margin-top: 15px;
+        width: 100%;
+        min-width: 25em;
+        height: auto;
+        min-height: 50px;
+    }
+    .section-content, .section-text {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px 15px;
+        gap: 20px;
+    }
+    .section-text {
+        flex-basis: 200px;
+        margin-bottom: 30px;
+    }
+    .section-text h1 {
+        font-size: 1.5rem;
+    }
+    #inverted-section {
+        order: 0;
+    }
+}
+
+
+

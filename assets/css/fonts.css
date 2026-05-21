@@ -1,0 +1,16 @@
+@font-face {
+    font-family: luckiest guy;
+    src: url(../fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(../fonts/Open_Sans/static/OpenSans-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: opensans;
+    src: url(../fonts/Open_Sans/static/OpenSans-ExtraBold.ttf);
+    font-weight: 800;
+}
